@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>*** GAMER USB 1TB *** ~*~ Official GeoCities Homepage ~*~ FREE MIDI ~*~</title>
+  <style>
+    :root {
+      --hot-pink: #ff00cc;
+      --lime: #00ff00;
+      --cyan: #00ffff;
+      --yellow: #ffff00;
+      --orange: #ff6600;
+      --purple: #9900ff;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+    }
+
+    body {
+      background-color: #000080;
+      background-image:
+        radial-gradient(circle, #ffffff 1px, transparent 1px),
+        radial-gradient(circle, #ffff00 1px, transparent 1px),
+        radial-gradient(circle, #00ffff 1px, transparent 1px);
+      background-size: 48px 48px, 72px 72px, 96px 96px;
+      background-position: 0 0, 24px 12px, 8px 36px;
+      color: #ffff00;
+      font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", "Marker Felt", cursive;
+      cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'><text y='20' font-size='20'>★</text></svg>") 12 12, auto;
+      overflow-x: hidden;
+    }
+
+    a { color: #00ffff; font-weight: bold; }
+    a:visited { color: #ff00ff; }
+    a:hover { color: #ffff00; background: #ff0000; }
+
+    .stars {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .star {
+      position: absolute;
+      color: #fff;
+      animation: twinkle 1.4s steps(2, end) infinite;
+    }
+
+    @keyframes twinkle {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    .wrap {
+      position: relative;
+      z-index: 1;
+      max-width: 780px;
+      margin: 8px auto 40px;
+      background: #000000;
+      border: 8px ridge #ff00ff;
+      box-shadow: 0 0 0 4px #ffff00, 0 0 0 8px #00ffff, 12px 12px 0 #ff0000;
+    }
+
+    .banner {
+      background: repeating-linear-gradient(
+        90deg,
+        #ff0000 0 16px,
+        #ffff00 16px 32px,
+        #00ff00 32px 48px,
+        #00ffff 48px 64px,
+        #0000ff 64px 80px,
+        #ff00ff 80px 96px
+      );
+      color: #000;
+      font-weight: 900;
+      text-align: center;
+      padding: 6px 4px;
+      font-size: 13px;
+      letter-spacing: 1px;
+      animation: banner-scroll 8s linear infinite;
+      background-size: 192px 100%;
+    }
+
+    @keyframes banner-scroll {
+      from { background-position: 0 0; }
+      to { background-position: 192px 0; }
+    }
+
+    header {
+      text-align: center;
+      padding: 10px 8px 0;
+      background: linear-gradient(#220044, #000);
+    }
+
+    h1 {
+      margin: 8px 0 4px;
+      font-size: clamp(28px, 8vw, 52px);
+      line-height: 1.05;
+      text-shadow:
+        3px 3px 0 #ff00ff,
+        -2px 0 0 #00ffff,
+        0 0 18px #ffff00;
+      animation: rainbow 1.2s linear infinite;
+    }
+
+    @keyframes rainbow {
+      0% { color: #ff0000; }
+      16% { color: #ffff00; }
+      33% { color: #00ff00; }
+      50% { color: #00ffff; }
+      66% { color: #0000ff; }
+      83% { color: #ff00ff; }
+      100% { color: #ff0000; }
+    }
+
+    .blink {
+      animation: blink 0.8s steps(2, start) infinite;
+    }
+
+    @keyframes blink {
+      to { visibility: hidden; }
+    }
+
+    .spin {
+      display: inline-block;
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .flame {
+      display: inline-block;
+      animation: flame 0.25s alternate infinite;
+    }
+
+    @keyframes flame {
+      from { transform: scaleY(1) translateY(0); filter: hue-rotate(0deg); }
+      to { transform: scaleY(1.25) translateY(-3px); filter: hue-rotate(40deg); }
+    }
+
+    marquee {
+      display: block;
+      background: #0000aa;
+      color: #ffff00;
+      border-top: 3px double #fff;
+      border-bottom: 3px double #fff;
+      font-size: 16px;
+      padding: 4px 0;
+    }
+
+    .usb {
+      width: min(280px, 70vw);
+      margin: 12px auto;
+      display: block;
+      filter: drop-shadow(0 0 12px #00ffff);
+    }
+
+    .price-box {
+      width: 92%;
+      margin: 8px auto 16px;
+      border: 6px outset #ff00ff;
+      background: #220022;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .price {
+      font-size: 42px;
+      color: #00ff00;
+      text-shadow: 0 0 10px #00ff00;
+      margin: 0;
+    }
+
+    .was {
+      color: #ff6666;
+      text-decoration: line-through;
+      font-size: 18px;
+    }
+
+    .specs {
+      width: 94%;
+      margin: 0 auto 16px;
+      border-collapse: collapse;
+      background: #111;
+      color: #00ff00;
+      font-family: "Courier New", monospace;
+      font-size: 14px;
+    }
+
+    .specs td, .specs th {
+      border: 2px solid #00ffff;
+      padding: 6px 8px;
+    }
+
+    .specs th {
+      background: #000066;
+      color: #ffff00;
+    }
+
+    .cta {
+      display: block;
+      width: min(420px, 90%);
+      margin: 10px auto 18px;
+      background: linear-gradient(#ffff00, #ff9900);
+      color: #000;
+      text-decoration: none;
+      text-align: center;
+      font-size: 22px;
+      font-weight: 900;
+      padding: 12px 8px;
+      border: 6px outset #fff;
+      box-shadow: 6px 6px 0 #ff00ff;
+      animation: pulse 0.6s alternate infinite;
+    }
+
+    .cta:hover {
+      background: linear-gradient(#00ff00, #ffff00);
+      color: #000;
+    }
+
+    @keyframes pulse {
+      from { transform: scale(1); }
+      to { transform: scale(1.04); }
+    }
+
+    .cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      padding: 0 10px 12px;
+    }
+
+    @media (max-width: 560px) {
+      .cols { grid-template-columns: 1fr; }
+    }
+
+    .panel {
+      border: 4px ridge #00ff00;
+      background: #001100;
+      padding: 8px;
+      color: #ccffcc;
+      font-size: 13px;
+    }
+
+    .panel h3 {
+      margin: 0 0 6px;
+      color: #ffff00;
+      text-align: center;
+      background: #ff0000;
+      font-size: 14px;
+    }
+
+    .counter {
+      text-align: center;
+      background: #000;
+      color: #0f0;
+      font-family: "Courier New", monospace;
+      letter-spacing: 4px;
+      font-size: 28px;
+      border: 3px inset #444;
+      display: inline-block;
+      padding: 4px 10px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 11px;
+      color: #ff99ff;
+      padding: 10px;
+      background: #220000;
+      border-top: 4px dashed #ffff00;
+    }
+
+    .awards {
+      text-align: center;
+      padding: 8px;
+    }
+
+    .badge {
+      display: inline-block;
+      margin: 4px;
+      padding: 6px 8px;
+      border: 3px solid gold;
+      background: navy;
+      color: gold;
+      font-size: 11px;
+      animation: spin 8s linear infinite;
+    }
+
+    .guestbook {
+      width: 92%;
+      margin: 8px auto 16px;
+      background: #fff8dc;
+      color: #000;
+      border: 5px groove #8b4513;
+      padding: 8px;
+      font-size: 13px;
+    }
+
+    .guestbook input, .guestbook textarea {
+      width: 100%;
+      font-family: "Comic Sans MS", cursive;
+      margin: 4px 0;
+    }
+
+    .under {
+      text-align: center;
+      color: #ffff00;
+      font-size: 18px;
+    }
+
+    .trail {
+      position: fixed;
+      pointer-events: none;
+      z-index: 9999;
+      font-size: 14px;
+      animation: fade 0.7s forwards;
+    }
+
+    @keyframes fade {
+      to { opacity: 0; transform: translateY(-16px); }
+    }
+
+    .midi {
+      text-align: center;
+      color: #00ffff;
+      font-size: 12px;
+      padding: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="stars" id="stars" aria-hidden="true"></div>
+
+  <p class="banner">★ UNDER CONSTRUCTION ★ BEST VIEWED IN NETSCAPE NAVIGATOR 3.0 AT 800×600 ★ ENABLE JAVA ★</p>
+
+  <div class="wrap">
+    <header>
+      <div class="midi">♪ NOW PLAYING: unsaved.mid — “All Star” MIDI (imagine it) ♪ &nbsp; [ ■ STOP ] [ ► PLAY ]</div>
+      <p>
+        <span class="flame">🔥</span>
+        <span class="spin">💾</span>
+        <span class="blink" style="color:#00ff00;font-size:20px;"> *** NEW!!! ***</span>
+        <span class="spin">💾</span>
+        <span class="flame">🔥</span>
+      </p>
+      <h1>~* GAMER USB *~<br>1 TERABYTE</h1>
+      <p style="color:#00ffff;margin:0 8px 8px;font-size:18px;">
+        The last USB stick you will ever need<br>
+        <span class="blink">UNTIL Y2K WIPES THE DRIVE</span>
+      </p>
+    </header>
+
+    <marquee behavior="scroll" direction="left" scrollamount="8">
+      ★★★ WELCOME TO MY HOMEPAGE ★ YOU ARE VISITOR <span id="hit-inline">0001337</span> ★ GAMER USB 1TB — PLUG IT IN, LOAD DOOM, WIN LAN PARTIES ★ NO MODEM REQUIRED ★ 90s FOREVER ★ SIGN MY GUESTBOOK ★
+    </marquee>
+
+    <svg class="usb" viewBox="0 0 280 120" role="img" aria-label="Cartoon 1TB Gamer USB stick">
+      <defs>
+        <linearGradient id="body" x1="0" x2="1">
+          <stop offset="0" stop-color="#222"/>
+          <stop offset="1" stop-color="#555"/>
+        </linearGradient>
+      </defs>
+      <rect x="40" y="28" width="200" height="64" rx="10" fill="url(#body)" stroke="#00ffff" stroke-width="3"/>
+      <rect x="20" y="44" width="28" height="32" fill="#c0c0c0" stroke="#fff" stroke-width="2"/>
+      <rect x="8" y="50" width="16" height="20" fill="#888" stroke="#fff"/>
+      <text x="140" y="58" text-anchor="middle" fill="#00ff00" font-family="Courier New" font-size="14" font-weight="bold">GAMERUSB</text>
+      <text x="140" y="78" text-anchor="middle" fill="#ffff00" font-family="Courier New" font-size="12">1TB • 1999 EDITION</text>
+      <circle cx="220" cy="60" r="7" fill="#ff0000">
+        <animate attributeName="fill" values="#ff0000;#00ff00;#ff0000" dur="0.6s" repeatCount="indefinite"/>
+      </circle>
+    </svg>
+
+    <div class="price-box">
+      <p class="was">WAS $999.99 (plus shipping &amp; handling &amp; a ham radio)</p>
+      <p class="price">ONLY $39.99!!!</p>
+      <p style="margin:4px 0 0;color:#ffff00;">or 12 easy payments of $9.99 on your parents’ credit card</p>
+      <p style="color:#ff66ff;margin:6px 0 0;" class="blink">LIMITED SUPPLY — ACT NOW BEFORE THE INTERNET FILLS UP</p>
+    </div>
+
+    <a class="cta" href="#order">►► CLICK HERE TO ORDER ◄◄<br><small>this button is totally real*</small></a>
+
+    <table class="specs">
+      <tr><th colspan="2">// TECH SPECS.TXT</th></tr>
+      <tr><td>CAPACITY</td><td>1,000,000,000,000 bytes (yes, TERA)</td></tr>
+      <tr><td>SPEED</td><td>Faster than a 56k. Faster than TWO 56ks taped together.</td></tr>
+      <tr><td>GAMES</td><td>Room for Quake, StarCraft, Unreal, AND your illegally burned mix CD .mp3s</td></tr>
+      <tr><td>COMPAT</td><td>Windows 95 / 98 / ME / “that Linux your cousin installed”</td></tr>
+      <tr><td>COLOR</td><td>Translucent iMac grape (glows in the LAN)</td></tr>
+      <tr><td>BONUS</td><td>Free AIM screenname ideas &amp; a dancing baby screensaver</td></tr>
+    </table>
+
+    <div class="cols">
+      <div class="panel">
+        <h3>★ WHY U NEED THIS ★</h3>
+        <ul>
+          <li>Zip disks are for COWARDS</li>
+          <li>Hide your saves from mom</li>
+          <li>Bring the whole Steam library… in 1999… somehow</li>
+          <li>Looks sick hanging off a lanyard at CompUSA</li>
+          <li>Y2K compliant* (*not a guarantee)</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>⚠ FINE PRINT ⚠</h3>
+        <p>This is an advertisement for the Gamer USB 1TB (90s edition). No purchase is processed on this page. MIDI not included because browsers got boring. GeoCities spirit: MAXIMUM.</p>
+        <p>Webmaster: <a href="mailto:webmaster@geocities.com">xX_LANLORD_Xx</a></p>
+      </div>
+    </div>
+
+    <p class="under" id="order">
+      <span class="spin">🚧</span>
+      <span class="blink">ORDER FORM UNDER CONSTRUCTION</span>
+      <span class="spin">🚧</span>
+    </p>
+    <p style="text-align:center;color:#ffa;font-size:13px;margin-top:0;">
+      (Just bring cash to the LAN. Ask for “the grape stick.”)
+    </p>
+
+    <div class="guestbook">
+      <strong>📝 SIGN MY GUESTBOOK or I will be sad forever</strong>
+      <form onsubmit="event.preventDefault(); document.getElementById('thanks').hidden = false; this.reset();">
+        <label>Handle / AIM:<input name="aim" placeholder="xXdarkst0rmXx"></label>
+        <label>Message:<textarea name="msg" rows="3" placeholder="d00d this usb r0xx0rs!!1"></textarea></label>
+        <button type="submit">SUBMIT TO THE WEB</button>
+      </form>
+      <p id="thanks" hidden style="color:#008000;font-weight:bold;">THANKS FOR SIGNING!! your comment will go live as soon as I check my Hotmail.</p>
+    </div>
+
+    <div class="awards" aria-label="fake awards">
+      <span class="badge">🏆 COOLEST SITE<br>JAN 1999</span>
+      <span class="badge">👁️ HIT COUNTER<br>CERTIFIED</span>
+      <span class="badge">💾 FLOPPY<br>KILLER AWARD</span>
+    </div>
+
+    <p style="text-align:center;margin:10px;">
+      You are visitor number<br>
+      <span class="counter" id="counter">0001337</span>
+    </p>
+
+    <p style="text-align:center;font-size:12px;color:#0ff;">
+      « <a href="#">PREV</a> | <a href="#">RANDOM</a> | <a href="#">NEXT</a> »<br>
+      GAMER USB WEBRING — 1TB or GTFO
+    </p>
+
+    <footer>
+      © 1999 xX_LANLORD_Xx — GeoCities / SiliconValley / 1337<br>
+      This page is best viewed in Netscape Navigator 3.0 with a CRT and Mountain Dew.<br>
+      <span class="blink">This site is always under construction.</span>
+      &nbsp;|&nbsp; <a href="#">back to my homepage</a>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const stars = document.getElementById("stars");
+      const glyphs = ["★", "✦", ".", "*", "✧"];
+      for (let i = 0; i < 60; i++) {
+        const s = document.createElement("span");
+        s.className = "star";
+        s.textContent = glyphs[i % glyphs.length];
+        s.style.left = Math.random() * 100 + "vw";
+        s.style.top = Math.random() * 100 + "vh";
+        s.style.fontSize = 8 + Math.random() * 14 + "px";
+        s.style.animationDelay = Math.random() * 1.4 + "s";
+        s.style.color = ["#fff", "#ff0", "#0ff", "#f0f"][i % 4];
+        stars.appendChild(s);
+      }
+
+      const n = 1000000 + Math.floor(Math.random() * 8999999);
+      const padded = String(n).padStart(7, "0");
+      const counter = document.getElementById("counter");
+      const inline = document.getElementById("hit-inline");
+      if (counter) counter.textContent = padded;
+      if (inline) inline.textContent = padded;
+
+      document.addEventListener("mousemove", function (e) {
+        const t = document.createElement("span");
+        t.className = "trail";
+        t.textContent = "★";
+        t.style.left = e.clientX + "px";
+        t.style.top = e.clientY + "px";
+        t.style.color = ["#ff00ff", "#00ffff", "#ffff00"][Math.floor(Math.random() * 3)];
+        document.body.appendChild(t);
+        setTimeout(function () { t.remove(); }, 700);
+      });
+    })();
+  </script>
+</body>
+</html>
